@@ -1,0 +1,20 @@
+<h2>Rent Action</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">CustomerId</th>
+            <th scope="col">Rent Date</th>
+            <th scope="col">Return Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rentAl of rentals">
+            <th scope="row">{{rentAl.rentalId}}</th>
+            <td>{{rentAl.customerId}}</td>
+            <td>{{rentAl.rentDate}}</td>
+            <td>{{rentAl.returnDate}}</td>
+        </tr>
+
+    </tbody>
+</table>
